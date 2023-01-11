@@ -8,6 +8,7 @@ cd merlin2
 apt install libz3-dev -y
 
 # unified-planning
+pip3 install pyparsing --upgrade
 pip3 install --pre unified-planning[pyperplan,tamer]
 
 # MongoDB
@@ -28,6 +29,6 @@ pip3 install -r requirements.txt
 python3 merlin2_arch/merlin2_reactive_layer/speech_to_text/nltk_download.py
 
 # colcon
-source /opt/ros/foxy/setup.bash
+source /opt/ros/galactic/setup.bash
 cd /root/ros2_ws
 colcon build
