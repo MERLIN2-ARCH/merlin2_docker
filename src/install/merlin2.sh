@@ -1,4 +1,4 @@
-cd $HOME/ros2_ws/src
+cd /root/ros2_ws/src
 git clone --recurse-submodules https://github.com/MERLIN2-ARCH/merlin2.git
 cd merlin2
 
@@ -26,6 +26,6 @@ pip3 install -r requirements.txt
 python3 merlin2_arch/merlin2_reactive_layer/speech_to_text/nltk_download.py
 
 # colcon
-cd $HOME/ros2_ws
-/bin/bash -c "source $HOME/.bashrc \
-              colcon_make"
+/bin/bash -c "source /opt/ros/foxy/setup.bash \
+              cd /root/ros2_ws \
+              colcon build"

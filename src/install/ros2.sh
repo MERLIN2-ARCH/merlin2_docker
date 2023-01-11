@@ -8,4 +8,4 @@ apt install ros-foxy-desktop python3-argcomplete python3-colcon-common-extension
 rosdep init
 rosdep update
 
-mkdir -p $HOME/ros2_ws/src
+mkdir -p /root/ros2_ws/src
