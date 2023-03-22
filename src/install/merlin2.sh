@@ -16,7 +16,7 @@ pip3 install --pre unified-planning[pyperplan,tamer]
 ./scrips/install_mongocxx.sh
 
 # sst
-apt-get install -y python-dev libportaudio2 libportaudiocpp0 portaudio19-dev libasound-dev swig
+apt-get install -y python-dev-is-python3 libportaudio2 libportaudiocpp0 portaudio19-dev libasound-dev swig
 
 # tts
 apt install espeak -y
@@ -29,6 +29,6 @@ pip3 install -r requirements.txt
 python3 merlin2_arch/merlin2_reactive_layer/speech_to_text/nltk_download.py
 
 # colcon
-source /opt/ros/galactic/setup.bash
+source /opt/ros/humble/setup.bash
 cd /root/ros2_ws
 colcon build

@@ -6,8 +6,6 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 apt update
 apt upgrade -y
 
-apt install ros-galactic-desktop python3-argcomplete python3-colcon-common-extensions python3-rosdep -y
-rosdep init
-rosdep update
+apt install ros-humble-desktop python3-argcomplete python3-colcon-common-extensions python3-rosdep -y
 
 mkdir -p /root/ros2_ws/src
