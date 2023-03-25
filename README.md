@@ -27,5 +27,5 @@ $ docker build -t merlin2:humble .
 
 ```shell
 $ docker pull mgons/merlin2:humble
-$ rocker --nvidia --x11 mgons/merlin2:humble
+$ rocker --nvidia --x11 --pulse mgons/merlin2:humble
 ```
